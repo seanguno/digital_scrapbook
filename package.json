@@ -1,7 +1,7 @@
 {
   "name": "scrapbook",
   "version": "1.0.0",
-  "homepage": "https://github.com/seanguno/digital_scrapbook.git",
+  "homepage": "https://seanguno.github.io/digital_scrapbook",
   "private": true,
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.10",
