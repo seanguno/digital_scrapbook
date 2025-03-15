@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global styles for the love memoir */
+body {
+    background-color: #FFF0F5;  /* Soft pink background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .scrap-book {
+    scroll-behavior: smooth;
+    perspective: 10px;
+  }
+  
+  .era {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: all 0.5s ease;
+  }
+  
+  .era img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Parallax-like scrolling effect */
+  .era:nth-child(odd) {
+    transform: translateX(-50px);
+  }
+  
+  .era:nth-child(even) {
+    transform: translateX(50px);
+  }
+  
+  .era:hover {
+    transform: scale(1.02);
+  }
+
+  /* Flip effect */
+  .photo-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
